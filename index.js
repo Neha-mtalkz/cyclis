@@ -6,6 +6,7 @@ let result = [];
 app.post("/karix-callback", (req, res) => {
     console.log(result)
     result = [...result, req.body];
+    console.log(result, "*************8result(**************")
     return res.send(result)
 })
 
