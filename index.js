@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json())
 let result = [];
 app.post("/karix-callback", (req, res) => {
-    result = [...result, req.body];
+    return result = [...result, req.body];
 })
 
 app.get("/result", (req, res) => {
