@@ -3,7 +3,7 @@ const app = express();
 
 console.log("*******************************")
 app.post("/karix-callback", (req, res) => {
-    console.log(req, "******************")
+    console.log(req.data, req.body, req, "******************")
     res.send(res.body)
 })
 
