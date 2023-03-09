@@ -3,11 +3,9 @@ const app = express();
 
 console.log("*******************************")
 app.post("/karix-callback", (req, res) => {
-    console.log(req.body, "******************")
+    console.log(req, "******************")
     res.send(res.body)
 })
-
-console.log("*******************************")
 
 app.listen(7000, (err) => {
     if(err) console.log(err)
